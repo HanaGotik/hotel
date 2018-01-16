@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ket"
+                    android:text="Data Lengkap Pemesan"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ket"
+                    android:background="@color/lines"/>
+
+                <EditText
+                    android:layout_below="@+id/lines"
+                    android:id="@+id/no_ktp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="No.KTP"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textCapWords"
+                    />
+
+                <EditText
+                    android:layout_below="@+id/no_ktp"
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Nama Lengkap"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textCapWords"
+                    />
+
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_below="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Alamat"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textCapWords"
+                    />
+                <EditText
+                    android:id="@+id/no_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="No. Telepon"
+                    android:inputType="number"
+                    android:layout_below="@+id/et_alamat"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:maxLength="12"/>
+
+                <EditText
+                    android:id="@+id/jumlah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Jumlah Kamar"
+                    android:inputType="number"
+                    android:layout_below="@+id/no_telp"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:maxLength="12"/>
+
+                <EditText
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Type Kamar"
+                    android:inputType="textCapWords"
+                    android:layout_below="@+id/jumlah"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:maxLength="12"/>
+                <EditText
+                    android:id="@+id/check_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Check In"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_tgl"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/check_out"
+                    android:elevation="10dp" />
+                <EditText
+                    android:id="@+id/check_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/check_in"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/md_edit_text"
+                    android:hint="Check Out"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/ib_tgl1"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/check_in"
+                    android:elevation="10dp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:id="@+id/btnpesan"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:layout_gravity="right"
+            android:layout_above="@+id/check_out"
+            android:elevation="10dp" />
+
+
+    </LinearLayout>
+</ScrollView>

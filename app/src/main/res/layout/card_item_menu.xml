@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:elevation="3dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/relatiflayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:clickable="true"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/biasa"
+                android:layout_width="match_parent"
+                android:layout_height="73dp" />
+
+            <TextView
+                android:id="@+id/namaJudul"
+                android:text="tvNama"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

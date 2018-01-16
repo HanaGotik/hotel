@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorblack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.source.hotelku.hotelku.activities.About">
+
+    <ImageView
+        android:id="@+id/imglogoabout"
+        android:background="@drawable/splash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/hotel"
+        android:layout_below="@+id/imglogoabout"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

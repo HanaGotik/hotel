@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hotelku</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ktp">No</string>
+    <string name="nama">Nama</string>
+    <string name="alamat">Alamat</string>
+    <string name="telepon">Telepon</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="check_in">Check_in</string>
+    <string name="check_out">Check_out</string>
+</resources>
